@@ -144,7 +144,7 @@ window.FYR.bootstrap = function($, window, undefined){
       return {
         name: rep['title'] + ' ' + rep.first_name + ' ' + rep.last_name,
         details: transforms[rep.party] + ', ' + transforms[rep.chamber],
-        photoUrl: 'https://d26u557eiepppx.cloudfront.net/images/congress/225x275/' + rep.bioguide_id + '.jpg',
+        photoUrl: 'http://bioguide.congress.gov/bioguide/photo/'+rep.bioguide_id[0]+'/' + rep.bioguide_id + '.jpg',
         resultUrl: 'http://opencongress.org/people/show/' + rep.govtrack_id
       };
     } else if (api == "openstates") {
